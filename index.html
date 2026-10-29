@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0c0f" />
+  <meta name="description" content="Ingénieur de piste karting — sessions, chrono, météo et stats" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Kart Engineer</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="topbar__brand">Kart Engineer</div>
+      <button type="button" id="install-btn" class="btn btn--ghost btn--sm hidden">Installer</button>
+    </header>
+    <main id="view" class="view" aria-live="polite"></main>
+    <nav class="bottom-nav" aria-label="Navigation principale">
+      <a href="#/" class="bottom-nav__item" data-route="/">
+        <span class="bottom-nav__icon" aria-hidden="true">⌂</span>
+        <span>Accueil</span>
+      </a>
+      <a href="#/session" class="bottom-nav__item" data-route="/session">
+        <span class="bottom-nav__icon" aria-hidden="true">⏱</span>
+        <span>Session</span>
+      </a>
+      <a href="#/stats" class="bottom-nav__item" data-route="/stats">
+        <span class="bottom-nav__icon" aria-hidden="true">▣</span>
+        <span>Stats</span>
+      </a>
+      <a href="#/data" class="bottom-nav__item" data-route="/data">
+        <span class="bottom-nav__icon" aria-hidden="true">☰</span>
+        <span>Données</span>
+      </a>
+    </nav>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

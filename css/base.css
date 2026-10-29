@@ -1,0 +1,92 @@
+:root {
+  --bg: #0a0c0f;
+  --bg-elevated: #12161c;
+  --bg-card: #171c24;
+  --border: #2a3340;
+  --text: #e8edf4;
+  --text-muted: #8b97a8;
+  --accent: #c4f542;
+  --accent-dim: #8fb82e;
+  --danger: #ff5c5c;
+  --warning: #ffb020;
+  --ok: #3dd68c;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --space: 16px;
+  --nav-h: 64px;
+  --topbar-h: 52px;
+  --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --mono: "Cascadia Mono", "SF Mono", Consolas, monospace;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 120% 80% at 50% -20%, #1a2210 0%, transparent 55%),
+    linear-gradient(180deg, #0d1014 0%, var(--bg) 40%);
+  background-attachment: fixed;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.5rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+h3 { font-size: 1rem; }
+
+p {
+  margin: 0 0 0.75rem;
+  color: var(--text-muted);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
